@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+<title>本帮风云</title>
+
+<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="font/iconfont.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<link href="css/bbfy.css" rel="stylesheet">
+
+</head>
+<body>
+<script src="lib/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="js/minbtn.js"></script>
+<script type="text/javascript">
+	function showrmuen(){
+		var div=$("#rm");
+		var leftvalue=div.css("left");
+		
+		if(leftvalue=="-100px"){
+			div.animate({left:'0px'},'slow');
+		}
+		else{
+			div.animate({left:'-100px'},'slow');
+		}
+		
+	}
+	
+	function showWord(id,e){
+		$('.wordBox').removeClass('showbox');
+		$('#'+id).addClass('showbox');
+		$('.rmuen a').addClass('unselect');
+		$('.rmuen a').removeClass('selected');
+		
+		$(e).removeClass('unselect');
+		$(e).addClass('selected');
+		
+	}
+	
+	
+</script>
+<div class="logo"><a href="index.html"></a></div>
+
+
+<div class="rmuen" id="rm" >
+	<ul>
+		<li><a class="selected" onclick="showWord('dj',this)"><span class="iconfont">&#xe62d;</span>对决</a></li>
+		<li><a class="unselect" onclick="showWord('tg',this)"><span class="iconfont">&#xe62d;</span>贪官</a></li>
+		<li><a class="unselect" onclick="showWord('eb',this)"><span class="iconfont">&#xe62d;</span>恶霸</a></li>
+		<li><a class="unselect" onclick="showWord('yl',this)"><span class="iconfont">&#xe62d;</span>引领</a></li>
+		<li><a href="index.html" class="unselect"><span class="iconfont">&#xe62d;</span>返回主页</a></li>
+	</ul>
+	<a class="openbtn" onclick="showrmuen()" ><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
+</div>
+
+<div class="mcontainer-fluid main">
+	
+	<div id="dj" class="wordBox showbox">
+		<div>
+			<img src="imge/bbfy-DJ.png" >
+			<img src="imge/bbfy-DJ-img.png" >
+		</div>
+		<div class="textArea">
+			<div class="title" >
+				<h1>风云对决</h1>
+			</div>
+			
+			<div class="txt">
+				<p>&emsp;&emsp;风云会，曾是天下间最神秘，也最强大的组织。
+				数十年来，却成为江湖中血雨腥风的根源。
+				风云会残暴不仁、滥杀无辜，令得武林中，人人自危。
+				
+				帮会少主百里追风，嗜血成性，利用权力和帮主的溺爱
+				奴役武林，屠杀英豪。使得江湖人人自危。
+				
+				后来其帮会二少主百里惊云，自幼乃英豪侠义之士，见兄如此残虐武林，决定
+				离家远行，苦修武艺，游历四方，结交英杰。决心战胜百里追风，清除武林之害，
+				造福天下。
+				
+				于二十年前，在风云会祭坛，二人大战十天十夜，天昏地暗，地动山摇，风云莫测，
+				一时间华夏大地四处可见电闪雷鸣，惊涛拍岸。
+				
+				十天后，以一人之力，力挽狂澜，结束了武林多年的动荡；
+				亦成就了他“武林第一人”的侠名。
+				
+				百里惊云接管风云会，百里追风不知所踪，而百里惊云也告诉门人，风云会将会迎接
+				更大的挑战。
+				</p>		
+					
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<div id="tg" class="wordBox">
+		<div>
+			<img src="imge/bbfy-TG.png" >
+			<img src="imge/bbfy-TG-img.png" >
+		</div>
+		<div class="textArea">
+			<div class="title" >
+				<h1>惩戒贪官</h1>
+			</div>
+			
+			<div class="txt">
+				<p>&emsp;&emsp;风云会只从以百里惊云为首后，不在是二十年前那个
+				血腥残暴，官侠勾结的风云会。百步惊云带领的一众英侠义士，各个嫉恶如仇
+				在江湖各地行侠仗义。				
+				</p>		
+				<p>&emsp;&emsp;风云会地属蜀江城，而听闻蜀江城内有一个贪官管辖，百姓民不聊生
+				贪官名唤宋清，蜀江人，乃朝官世家。历代都是贪官。为官仅十年，就家财万贯，相比之下
+				百姓凄苦，无人问津。可谓朱门酒肉臭，路有冻死骨。
+				</p>
+				<p>&emsp;&emsp;百里惊云命本帮轻功高手刘星，前去盗取宋府的账目记录，以及调查宋清的
+				受贿证据。五天后，宋清被捕，风云会受天下赞誉，从此或“侠义第一帮”的美名。
+				</p>	
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<div id="eb" class="wordBox">
+		<div>
+			<img src="imge/bbfy-EB.png" >
+			<img src="imge/bbfy-EB-img.png" >
+		</div>
+		<div class="textArea">
+			<div class="title" >
+				<h1>铲除恶霸</h1>
+			</div>
+			
+			<div class="txt">
+				<p>&emsp;&emsp;随着风云会的日渐壮大的同时也伴随着越来越多的
+				风险和挑战，在风云会的下属分会，风云堂，立地洛阳。洛阳城是各大势力的
+				汇聚之地，人流巨大，资源丰富，地理上乘。这里寸土千金。当然风云会自然
+				不会放过这个宝地，在此可以广纳豪杰，发展大业。
+				</p>
+				<p>&emsp;&emsp;风云会派遣江湖第一高手，叶夜前去开拓帮会势力，但
+				洛阳鱼龙混杂，叶夜虽武功高强，但也是一名年轻少女，涉世尚浅。初到洛阳
+				便遭遇麻烦。洛阳城第一大恶霸，徐坤，武功高强，权势巨大。叶夜在洛城的
+				第一晚就与徐坤遭遇，徐坤一眼就看中了叶夜的美貌，妄图霸占，但始终不敌
+				叶夜，最终命丧黄泉。但徐坤之死也给洛阳带来巨大的动荡，江湖群侠纷纷前
+				往洛阳，只为在洛阳这次的重新洗牌获得江湖地位。
+				</p>	
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<div id="yl" class="wordBox">
+		<div>
+			<img src="imge/bbfy-YL.png" >
+			<img src="imge/bbfy-YL-img.png" >
+		</div>
+		<div class="textArea">
+			<div class="title" >
+				<h1>引领天下</h1>
+			</div>
+			
+			<div class="txt">
+				<p>&emsp;&emsp;风云会第一教义就是，侠肝义胆。只做侠义之事，全会
+				上下人人都是江湖上美名远扬的人物，劫富济贫，为民除害，逍遥九州等都成
+				为了本帮的代名词。风云会的名誉传遍华夏。
+				</p>
+				<p>&emsp;&emsp;江湖上的帮派众多，但多年来一直散落中原各地，自成
+				一方，各帮之间的冲突也日渐剧烈，于是各豪侠俊杰开始商讨寻求一个能带领
+				众帮，安定江湖的门派。有不少人都推荐拥有“侠义第一帮”美名的风云会作为
+				各派之首。众人无不赞成。于是风云会便带领江湖豪杰以扶危济困，匡扶天下
+				为重任，引领天下，江湖风气向善向真。
+				</p>	
+			</div>
+		</div>
+	</div>
+	
+
+
+</div>
+
+<div class="minbtn" style="position: absolute;top: 80%;right: 120px;">
+		<div class="toggle" style="background-color: #4e4e4e;" id="toggle" onclick="menu-expand()">
+			<i class="fa fa-plus glyphicon glyphicon-remove" id="plus" style="transform: rotate(45deg);">
+			</i>
+		</div>
+	
+	
+	    <div class="menu" id="menu" style="border-color: #4e4e4e;">
+			<a href="bpcy.html" title="帮派成员" >
+				<i class="fa fa-microphone iconfont">&#xe65c;</i>
+			</a>
+			<a href="jhxj.html" title="江湖寻迹" >
+				<i class="fa fa-user iconfont">&#xe639;</i>
+			</a>
+			<a href="bpjs.html" title="帮派介绍" >
+				<i class="fa fa-video-camera iconfont">&#xe609;</i>
+			</a>
+			<a href="index.html" title="回到主页" >
+				<i class="fa fa-envelope iconfont">&#xe65e;</i>
+			</a>
+		</div>  
+	</div>
+	
+
+
+
+
+
+</body>
+</html>

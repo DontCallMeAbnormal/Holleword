@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>帮派大堂</title>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    
+</head>
+<body >
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.let_it_snow.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$("canvas.flare").let_it_snow({
+		windPower: 0,
+		speed: 0,
+		color: "#392F52",
+		size:120,
+		opacity: 0.00000001,
+		count: 40,
+		interaction: false
+	});
+
+	$("canvas.snow").let_it_snow({
+		windPower: 3,
+		speed: 1,
+		count: 250,
+		size: 0
+	});
+
+	$("canvas.flake").let_it_snow({
+		windPower: -3,
+		speed: 1,
+		count: 20,
+		size: 10,
+		image: "images/white-snowflake.png"
+	});
+
+});
+</script>
+    
+
+
+
+
+<div class="logobox">
+	<img src="imge/logo02.png" width="150">
+</div>
+
+<!-- 轮播图部分 -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="item active img img-1">
+        </div>
+        <div class="item img img-2">
+        </div>
+        <div class="item img img-3">
+        </div>
+    </div>
+<!-- 轮播（Carousel）指标 -->
+	<ol class="carousel-indicators carousel-right" style="top: 85%;">
+	   <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	   <li data-target="#myCarousel" data-slide-to="1"></li>
+	   <li data-target="#myCarousel" data-slide-to="2"></li>
+	</ol>
+</div>
+<!-- /轮播图部分 -->
+
+<div class="videoBox bgimge">
+	<div class="nav_box">
+		<ul>
+			<li><a href="bpjs.html" id="bpjs" target="_self"></a></li>
+			<li><a href="bpcy.html" id="bpcy" target="_self"></a></li>
+			<li><a href="bbfy.html" id="bbfy" target="_self"></a></li>
+			<li><a href="jhxj.html" id="jhxj" target="_self"></a></li>
+		</ul>
+	</div>
+	<div style="text-align: center;">
+		<video class="world_video show_vi" id="J_world_video_1"  muted="" src="imge/bgVideo1.mp4"  loop="loop"   autoplay="autoplay"></video>
+		<video class="world_video" id="J_world_video_2"  muted="" src="imge/bgVideo2.mp4"  loop="loop"   autoplay="autoplay"></video>
+		<video class="world_video" id="J_world_video_3"  muted="" src="imge/bgVideo3.mp4"  loop="loop"   autoplay="autoplay"></video>
+		<video class="world_video" id="J_world_video_4"  muted="" src="imge/bgVideo4.mp4"  loop="loop"   autoplay="autoplay"></video>
+		<video class="world_video" id="J_world_video_5"  muted="" src="imge/bgVideo5.mp4"  loop="loop"   autoplay="autoplay"></video>
+		<video class="world_video" id="J_world_video_6"  muted="" src="imge/bgVideo6.mp4"  loop="loop"   autoplay="autoplay"></video>
+	
+		<div class="textBox" style="float: right;">
+			<p>《临安春雨初霁》</p>
+			<p>世味年来薄似纱，谁令骑马客京华。</p>
+			<p>小楼一夜听春雨，深巷明朝卖杏花。</p>
+			<p>矮纸斜行闲作草，晴窗细乳戏分茶。</p>
+			<p>素衣莫起风尘叹，犹及清明可到家。</p>	
+		</div>
+		
+		<div class="textBox" style="float:left;margin: 4em 0em;">
+			<p>《鹧鸪天·代人赋》</p>
+			<p>晚日寒鸦一片愁，柳塘新绿却温柔。</p>
+			<p>若教眼底无离恨，不信人间有白头。</p>
+			<p>肠已断，泪难收，相思重上小红楼。</p>
+			<p>情知已被山遮断，频倚阑干不自由。</p>	
+		</div>
+		
+		
+		<object
+		classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+		codebase="http://fpdownload.macromedia.com/
+		pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0">
+		<param name="SRC" value="bookmark.swf">
+			<embed width="554" height="260" align="middle" allowscriptaccess="never" allowfullscreen="true" mode="transparent" type="application/x-shockwave-flash" wmode="transparent" src="imge/xajh.swf" style="display: block;width: 45%;margin: 40px 0px;"></embed>
+		</object>
+		
+	</div>
+	
+	
+	
+	
+</div>
+
+<img src="images/white-snowflake.png" style="display: none" id="lis_flake">
+
+	<canvas width="100%" height="100%" class="flare"></canvas>
+	<canvas width="100%" height="100%" class="snow"></canvas>
+	<canvas width="100%" height="100%" class="flake"></canvas>
+
+
+
+
+
+
+
+<div id="alert" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      	<div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title" id="mySmallModalLabel">播放背景音乐？</h4>
+        </div>
+        
+        <div class="modal-body" style="height: 60px;">
+			        <button type="button" class="btn btn-primary col-xs-6" data-dismiss="modal" aria-label="Close" onclick="playAudio()">播放</button>
+			        <button type="button" class="btn btn-default col-xs-6" data-dismiss="modal" aria-label="Close" onclick="passAudio()">取消</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<footer>
+	<audio id="audio"  controls="controls" loop="loop" 
+	style="position: absolute;margin-top: -30px;right: 0;">
+	  <source src="imge/BGM/霹雳英雄 - 醉寒江.mp3" type="audio/mpeg">
+	  您的浏览器不支持audio标签.
+	</audio>
+	<div style="padding-top: 10px">
+		<p>啸傲江湖，我们是认真的</p>
+		<p>天下风云出我辈，一入江湖岁月催。皇图霸业谈笑中，人生不生一场醉。</p>
+	</div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript">
+$(window).load(function(){
+		setInterval("changeVideo()",5000);
+		//$('#alert').modal('show');
+		
+});
+
+function playAudio(){
+	$('.nav_box a').attr("target","_Blank");
+	var player = $("#audio")[0].play();
+}
+
+function passAudio(){
+	$('.nav_box a').attr("target","_self");
+}
+
+
+
+var vid=1;
+function changeVideo(){
+	$('.show_vi').removeClass('show_vi');
+	if(vid<2){
+		$('#J_world_video_1').addClass('show_vi');
+		vid++;
+	}else if(vid<3){
+		$('#J_world_video_2').addClass('show_vi');
+		vid++;
+	}else if(vid<4){
+		$('#J_world_video_3').addClass('show_vi');
+		vid++;
+	}else if(vid<5){
+		$('#J_world_video_4').addClass('show_vi');
+		vid++;
+	}else if(vid<6){
+		$('#J_world_video_5').addClass('show_vi');
+		vid++;
+	}else{
+		$('#J_world_video_6').addClass('show_vi');
+		vid=1;
+	}
+	
+}
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+@charset "UTF-8";
+html,body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	overflow-x: hidden;
+	
+}
+
+.bgBox{
+	width:100%;
+	height:auto;
+	padding-bottom:200px;
+	margin:0;
+	background-repeat:no-repeat;
+	background-position: center;
+	 background-attachment:fixed;
+	background-size: cover;
+	background-image:url('../imge/bg03.png');
+}
+
+.logo{
+	margin:0;
+	z-index:10;
+	width:200px;
+	height:200px;
+	background-repeat:no-repeat;
+	background-position: center;
+	background-image:url('../imge/logo03.png');
+}
+
+.bookBox{
+	animation: bookBoxAmtion 2.3s;
+	-moz-animation: bookBoxAmtion 2.3s;	/* Firefox */
+	-webkit-animation: bookBoxAmtion 2.3s;	/* Safari 和 Chrome */
+	-o-animation: bookBoxAmtion 2.3s;	/* Opera */
+}
+
+@keyframes bookBoxAmtion
+{
+	0%   {
+		width:0;
+	}
+	100% {
+		width:1000px;
+	}
+}
+.footImg{
+	position:absolute;
+	margin:0;
+	top: 120%;
+    width: 100%;
+    height:200px;
+	background-repeat:no-repeat;
+	background-position: center;
+	pointer-events: none;
+	background-image:url('../imge/footimg.png');
+}
+
+.rmuency{
+	height: 100px;
+    width: 100%;
+    position: relative;
+    z-index:10;
+    top: 100px;
+    right: 15px;
+    animation: rmuenAmtion 1.5s;
+	-moz-animation: rmuenAmtion 1.5s;	/* Firefox */
+	-webkit-animation: rmuenAmtion 1.5s;	/* Safari 和 Chrome */
+	-o-animation: rmuenAmtion 1.5s;	/* Opera */
+}
+.rmuency ul{
+	list-style: none;
+    display: flex;
+    padding: 0;
+    width: 50%;
+    margin: 0 auto;
+}
+.rmuency li{
+	margin: 0 auto;
+}
+.rmuency a{
+	display: block;
+	width:80px;
+	height:80px;
+	font-weight: bold;
+	font-size:20px;
+	font-family: cursive,KaiTi,宋体，微软雅黑;
+	background-image:url('../imge/listBody02.png');
+	background-repeat:no-repeat;
+	background-position: center;
+	text-align: center;
+	line-height: 95px;
+	color: #fff;
+	transition: transform 0.5s;
+	-moz-transition: transform 0.2s;	/* Firefox 4 */
+	-webkit-transition: transform 0.2s;	/* Safari 和 Chrome */
+	-o-transition: transform 0.2s;	/* Opera */
+}
+.rmuency a:hover{
+	text-decoration: none;
+	cursor: pointer;
+	color: #fff;
+	transform: scale(1.2,1.2);
+	-webkit-transform: scale(1.2,1.2);	/* Safari 和 Chrome */
+	-moz-transform: scale(1.2,1.2);	/* Firefox */
+}
+
+@keyframes rmuenAmtion
+{
+	0%   {
+		opacity: 0;
+	}
+	75%   {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+.renwu{
+	position: absolute;
+    margin: 0;
+    top: -50%;
+    width: 1200px;
+    height: 200%;
+	background-repeat:no-repeat;
+	background-position: center;
+	pointer-events: none;
+}
+.wuxia01{
+	background-image:url('../imge/renwu/wuxia01.png');
+	left:0px;
+	animation: wuxia01Amtion 2s;
+	-moz-animation: wuxia01Amtion 2s;	/* Firefox */
+	-webkit-animation: wuxia01Amtion 2s;	/* Safari 和 Chrome */
+	-o-animation: wuxia01Amtion 2s;	/* Opera */
+}
+@keyframes wuxia01Amtion
+{
+	0%   {
+		left:2000px;
+	}
+	100% {
+		left:0px;
+	}
+}
+.wuxia02{
+	background-image:url('../imge/renwu/wuxia02.png');
+	top:-50%;
+	animation: wuxia02Amtion 2s;
+	-moz-animation: wuxia02Amtion 2s;	/* Firefox */
+	-webkit-animation: wuxia02Amtion 2s;	/* Safari 和 Chrome */
+	-o-animation: wuxia02Amtion 2s;	/* Opera */
+}
+@keyframes wuxia02Amtion
+{
+	0%   {
+		top:-500%;
+	}
+	100% {
+		top:-50%;
+	}
+}
+
+.wuxia03{
+	background-image:url('../imge/renwu/wuxia03.png');
+	right: -200px;
+	animation: wuxia03Amtion 2s;
+	-moz-animation: wuxia03Amtion 2s;	/* Firefox */
+	-webkit-animation: wuxia03Amtion 2s;	/* Safari 和 Chrome */
+	-o-animation: wuxia03Amtion 2s;	/* Opera */
+}
+@keyframes wuxia03Amtion
+{
+	0%   {
+		right: 3000px;
+	}
+	100% {
+		right: -200px;
+	}
+}
+
+
+.wuxia04{
+	background-image:url('../imge/renwu/wuxia04.png');
+	right: -450px;
+	animation: wuxia04Amtion 2s;
+	-moz-animation: wuxia04Amtion 2s;	/* Firefox */
+	-webkit-animation: wuxia04Amtion 2s;	/* Safari 和 Chrome */
+	-o-animation: wuxia04Amtion 2s;	/* Opera */
+	
+}
+
+@keyframes wuxia04Amtion
+{
+	0%   {
+		right: -1000px;
+	}
+	100% {
+		right: -450px;
+	}
+}
+
+
+.wuxia05{
+	background-image:url('../imge/renwu/wuxia05.png');
+	animation: wuxia05Amtion 2s;
+	-moz-animation: wuxia05Amtion 2s;	/* Firefox */
+	-webkit-animation: wuxia05Amtion 2s;	/* Safari 和 Chrome */
+	-o-animation: wuxia05Amtion 2s;	/* Opera */
+	
+}
+
+@keyframes wuxia05Amtion
+{
+	0%   {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.wuxia06{
+	background-image:url('../imge/renwu/wuxia06.png');
+	right: -450px;
+	animation: wuxia06Amtion 2s;
+	-moz-animation: wuxia06Amtion 2s;	/* Firefox */
+	-webkit-animation: wuxia06Amtion 2s;	/* Safari 和 Chrome */
+	-o-animation: wuxia06Amtion 2s;	/* Opera */
+	
+}
+@keyframes wuxia06Amtion
+{
+	0%   {
+		right: 2000px;
+	}
+	100% {
+		right: -450px;
+	}
+}
+
+
+

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>帮派介绍</title>
+<link href="css/bpjs.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.let_it_snow.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$("canvas.flare").let_it_snow({
+		windPower: 0,
+		speed: 0,
+		color: "#392F52",
+		size:120,
+		opacity: 0.00000001,
+		count: 40,
+		interaction: false
+	});
+
+	$("canvas.snow").let_it_snow({
+		windPower: 3,
+		speed: 1,
+		count: 250,
+		size: 0
+	});
+
+	$("canvas.flake").let_it_snow({
+		windPower: -3,
+		speed: 1,
+		count: 20,
+		size: 10,
+		image: "images/white-snowflake.png"
+	});
+
+});
+</script>
+
+<script type="text/javascript">
+	function tabChang(e){
+		var a=$('.tit_a');
+		a.removeClass('selected');
+		/* for(var i=0;i<a.length;i++){
+			a[i].removeClass('selected');
+		} */
+		$(e).addClass('selected');
+	}
+	
+	
+</script>
+
+
+
+
+<div class="bgBox">
+	<div class="logo"><a href="index.html"></a></div>
+	<div class="content">
+		<div class="main">
+			<div class="leftimg"></div>
+			<div class="rightimg"></div>
+			<div class="liner">
+				<ul class="tit-tab">
+					<li><a data-target="#myCarousel" class="tit_a selected" data-slide-to="0" onclick="tabChang(this)">解释名称</a></li>
+					<li><a data-target="#myCarousel" class="tit_a" data-slide-to="1" onclick="tabChang(this)" >宗旨阐述</a></li>
+					<li><a data-target="#myCarousel" class="tit_a" data-slide-to="2" onclick="tabChang(this)" >历史渊源</a></li>
+				</ul>
+				<div id="myCarousel" style="height: 176px;" class="carousel slide" >
+					<div class="carousel-inner" style="height: 100%;">
+				        <div class="item active">
+				        	<div class="item_box">
+					        	<p>古侠之"啸"</p>
+					        	<p>勇者之"傲"</p>
+					        	<P>江湖云涌，兼济天下</P>
+				        	</div>
+				        </div>
+				        <div class="item" >
+				        	<div class="item_box">
+				        		<p>侠之大者，为国为民，路见不平，拔刀相助，惩恶扬善，替天行道</p>
+				        	</div>
+				        </div>
+				        <div class="item " >
+				        	<div class="item_box">
+					        	<p>本派开山之祖古墨萧少年时，父母受邪教残害，族人被恶霸欺凌至散，深谙人世黑暗
+					        	百姓凄苦，民不聊生，悲愤之时，破指血写："强我武技，匡扶天下"。进而独上青云山，
+					        	苦练武技二十年，武功大成之后，成立啸傲江湖，之后广纳狭义之士，经历百年之久，名扬天下
+					        	，乃成为江湖第一大帮。
+					        	</p>
+					        </div>
+				        </div>
+				    </div>
+				</div>	
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="rmuen">
+	<ul>
+		<li style="border-top: 2px solid;"><a href="bpcy.html" title="帮派成员" >员</a></li>
+		<li><a href="bbfy.html" title="本帮风云">云</a></li>
+		<li><a href="jhxj.html" title="江湖寻迹">迹</a></li>
+		<li><a href="index.html" title="返回主页" href="index.html">返</a></li>
+	</ul>
+</div>
+
+
+
+
+
+<img src="images/white-snowflake.png" style="display: none" id="lis_flake">
+
+	<canvas width="100%" height="100%" class="flare"></canvas>
+	<canvas width="100%" height="100%" class="snow"></canvas>
+	<canvas width="100%" height="100%" class="flake"></canvas>
+
+
+
+<footer>
+	
+	<div style="padding-top: 20px">
+		<p>啸傲江湖，我们是认真的</p>
+		<p>天下风云出我辈，一入江湖岁月催。皇图霸业谈笑中，人生不生一场醉。</p>
+	</div>
+</footer>
+
+
+</body>
+</html>
